@@ -111,14 +111,26 @@ main =
         ]
 
 
+
+-- Suma de 2 números
+
+
 add2 : Float -> Float -> Float
 add2 x y =
     x + y
 
 
+
+-- Suma de 3 números
+
+
 add3 : Float -> Float -> Float -> Float
 add3 x y z =
     x + y + z
+
+
+
+-- Función que recibe una operación
 
 
 calc : Float -> Float -> (Float -> Float -> Float) -> Float
