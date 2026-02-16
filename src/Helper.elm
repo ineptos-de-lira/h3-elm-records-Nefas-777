@@ -121,24 +121,6 @@ add3 x y z =
     x + y + z
 
 
-calc : Int -> Int -> String -> Int
-calc x y op =
-    case op of
-        "+" ->
-            x + y
-
-        "-" ->
-            x - y
-
-        "*" ->
-            x * y
-
-        "//" ->
-            if y /= 0 then
-                x // y
-
-            else
-                0
-
-        _ ->
-            0
+calc : Int -> Int -> (Int -> Int -> Int) -> Int
+calc x y operation =
+    operation x y
