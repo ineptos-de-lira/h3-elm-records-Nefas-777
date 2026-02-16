@@ -112,7 +112,7 @@ main =
 
 
 
--- Suma de 2 enteros
+-- Int (porque fuzz2 usa int int)
 
 
 add2 : Int -> Int -> Int
@@ -121,16 +121,16 @@ add2 x y =
 
 
 
--- Suma de 3 enteros
+-- Float (porque usan Expect.within)
 
 
-add3 : Int -> Int -> Int -> Int
+add3 : Float -> Float -> Float -> Float
 add3 x y z =
     x + y + z
 
 
 
--- Función que recibe una operación
+-- Int (porque fuzz2 int int)
 
 
 calc : Int -> Int -> (Int -> Int -> Int) -> Int
