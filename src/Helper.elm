@@ -112,19 +112,19 @@ main =
 
 
 
--- Suma de 2 números
+-- Suma de 2 enteros
 
 
-add2 : Float -> Float -> Float
+add2 : Int -> Int -> Int
 add2 x y =
     x + y
 
 
 
--- Suma de 3 números
+-- Suma de 3 enteros
 
 
-add3 : Float -> Float -> Float -> Float
+add3 : Int -> Int -> Int -> Int
 add3 x y z =
     x + y + z
 
@@ -133,6 +133,6 @@ add3 x y z =
 -- Función que recibe una operación
 
 
-calc : Float -> Float -> (Float -> Float -> Float) -> Float
+calc : Int -> Int -> (Int -> Int -> Int) -> Int
 calc x y operation =
     operation x y
