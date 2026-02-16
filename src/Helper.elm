@@ -111,16 +111,16 @@ main =
         ]
 
 
-add2 : Int -> Int -> Int
+add2 : Float -> Float -> Float
 add2 x y =
     x + y
 
 
-add3 : Int -> Int -> Int -> Int
+add3 : Float -> Float -> Float -> Float
 add3 x y z =
     x + y + z
 
 
-calc : Int -> Int -> (Int -> Int -> Int) -> Int
+calc : Float -> Float -> (Float -> Float -> Float) -> Float
 calc x y operation =
     operation x y
