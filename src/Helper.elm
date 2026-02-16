@@ -121,8 +121,8 @@ add3 x y z =
     x + y + z
 
 
-calc : String -> Int -> Int -> Int
-calc op x y =
+calc : Int -> Int -> String -> Int
+calc x y op =
     case op of
         "+" ->
             x + y
