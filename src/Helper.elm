@@ -119,3 +119,26 @@ add2 x y =
 add3 : Int -> Int -> Int -> Int
 add3 x y z =
     x + y + z
+
+
+calc : String -> Int -> Int -> Int
+calc op x y =
+    case op of
+        "+" ->
+            x + y
+
+        "-" ->
+            x - y
+
+        "*" ->
+            x * y
+
+        "/" ->
+            if y /= 0 then
+                x // y
+
+            else
+                0
+
+        _ ->
+            0
