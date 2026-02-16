@@ -133,7 +133,7 @@ calc op x y =
         "*" ->
             x * y
 
-        "/" ->
+        "//" ->
             if y /= 0 then
                 x // y
 
